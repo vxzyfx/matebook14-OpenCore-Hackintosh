@@ -27,9 +27,9 @@ readme in other language：
 [点进这里查看演示视频](https://www.bilibili.com/video/bv18z4y1U7rz)  
 
 
-![image](https://github.com/ske1996/matebook-13-2019-oc-efi/blob/master/%E6%9D%82%E9%A1%B9/Monterey%20review.png?raw=true)   
+![image](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/blob/master/%E6%9D%82%E9%A1%B9/Monterey%20review.png?raw=true)   
   
-![image](https://github.com/ske1996/matebook-13-2019-oc-efi/blob/master/%E6%9D%82%E9%A1%B9/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-11-14%2019.30.41.png?raw=true)   
+![image](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/blob/master/%E6%9D%82%E9%A1%B9/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-11-14%2019.30.41.png?raw=true)   
 
 ![image](https://i0.hdslb.com/bfs/article/0d73e23780c4a4a5b80b1e956dc8957bb95f3372.jpg@1320w_880h.webp)  
 ![image](https://i0.hdslb.com/bfs/article/3c89fd7615510c1b2e9efa1c6024348b4b635abc.jpg@1320w_1760h.webp)  
@@ -257,12 +257,12 @@ bigsur跟catalina需要对号入座，不可串着用
 因为很多人都不替换自己的三码就用，所以导致苹果账号服务受限的情况比比皆是，因此，我把config设置为“如果不改三码就用，那直接无法启动”  
 具体修改三码的教程自己百度，自己编辑config。（p.s.其实应该四码，包含：SSN，MLB，ROM，UUID） 
   
-windows下编辑config的工具：[ProperTree-windows.zip](https://github.com/ske1996/matebook-13-2019-oc-efi/raw/master/ProperTree-windows.zip)  
+windows下编辑config的工具：[ProperTree-windows.zip](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/raw/master/ProperTree-windows.zip)  
   
   
 </details>  
 
-[![Download](https://img.shields.io/badge/OpenCore%20EFI下载-4.2k-blue)](https://github.com/ske1996/matebook-13-2019-oc-efi/releases)  
+[![Download](https://img.shields.io/badge/OpenCore%20EFI下载-4.2k-blue)](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/releases)  
 
 镜像下载链接：https://blog.daliansky.net/  
 
@@ -325,7 +325,7 @@ sudo spctl --master-disable
   
 参考： 
 
-![image](https://github.com/ske1996/matebook-13-2019-oc-efi/blob/master/%E6%9D%82%E9%A1%B9/audiojack.png?raw=true)
+![image](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/blob/master/%E6%9D%82%E9%A1%B9/audiojack.png?raw=true)
 
 
 
@@ -349,7 +349,7 @@ ComboJack_Installer/install.sh
 ⚠️注意：  
 根据你的系统版本去下载（获得）开启hidpi的脚本哈   
 
-Monterey & BigSur：[点击下载](https://github.com/ske1996/matebook-13-2019-oc-efi/raw/master/Bigsur/%EF%BC%88BigSur%E6%96%B9%E6%A1%882%EF%BC%89hidpi.zip)  
+Monterey & BigSur：[点击下载](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/raw/master/Bigsur/%EF%BC%88BigSur%E6%96%B9%E6%A1%882%EF%BC%89hidpi.zip)  
 Catalina：https://github.com/xzhih/one-key-hidpi  
 对于Catalina用户：你需要对EFI/OC/config.plist进行更改，具体是使用propertree打开后找到：NVRAM/add/7C436110..../csr-active-config的值改为E7030000，然后reset nvram后才可以进行接下去的步骤  
 
@@ -365,7 +365,7 @@ Catalina：https://github.com/xzhih/one-key-hidpi
 
 *注意⚠️你的1343x895这个分辨率的设置位置不一定是在【更大空间】  
 
-![image](https://github.com/ske1996/matebook-13-2019-oc-efi/blob/master/%E6%9D%82%E9%A1%B9/HIDPI.png?raw=true)  
+![image](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/blob/master/%E6%9D%82%E9%A1%B9/HIDPI.png?raw=true)  
 
 *注意⚠️你的1343x895这个分辨率的设置位置不一定是在【更大空间】
 
@@ -403,21 +403,21 @@ https://zhuanlan.zhihu.com/p/121655468
 1.先准备一个u盘，格式化为fat32  
 2.u盘里创建文件夹：EFI  
 3.打开EFI文件夹，在里面创建文件夹BOOT  
-4.复制[cfgunlock.zip(点击下载)](https://github.com/ske1996/matebook-13-2019-oc-efi/raw/master/cfgunlock.zip)里面的bootx64.efi进U盘的EFI/BOOT下  
+4.复制[cfgunlock.zip(点击下载)](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/raw/master/cfgunlock.zip)里面的bootx64.efi进U盘的EFI/BOOT下  
 5.关机后开机按F12使用这个U盘去引导，然后进入修改bios底层阶段  
 
 - 以下为修改bios底层阶段：  
 1. 进入后 ‘alt’ + ’=‘ 切换进 ACPI Variable  
 2. 用pageup/pagedown/上下方向键找到 CPUSetup  
 3. 回车进入然后用上下左右方向键找到对应的地址（也就是0x3e，那么就是纵坐标03，横坐标0e的位置）  
-![image](https://github.com/ske1996/matebook-13-2019-oc-efi/blob/master/%E6%9D%82%E9%A1%B9/RU.jpg?raw=true)  
+![image](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/blob/master/%E6%9D%82%E9%A1%B9/RU.jpg?raw=true)  
 4. 一看，确实是0x01，那么回车，输入0 就可以看到它变成了0  
 5. 使用'crtl' + 'w' 来保存 保存的时候屏幕上会直接显示update written 的，这说明已经写入了  
 6. 使用'alt' + 'q' 来退出，然后即可回到引导进入系统了，CFG已经解锁  
 
 修改完成后可以再用那个u盘引导启动一次，查看是否修改成功  
-然后我建议使用[propertree](https://github.com/ske1996/matebook-13-2019-oc-efi/raw/master/ProperTree.zip)修改EFI分区中的EFI/OC/config.plist的kernel/add/quirks为下图所示  
-![image](https://github.com/ske1996/matebook-13-2019-oc-efi/blob/master/%E6%9D%82%E9%A1%B9/cfgunlosk.png?raw=true)  
+然后我建议使用[propertree](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/raw/master/ProperTree.zip)修改EFI分区中的EFI/OC/config.plist的kernel/add/quirks为下图所示  
+![image](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/blob/master/%E6%9D%82%E9%A1%B9/cfgunlosk.png?raw=true)  
 
 
 </details> 
@@ -439,14 +439,14 @@ https://zhuanlan.zhihu.com/p/121655468
 1.先准备一个u盘，格式化为fat32  
 2.u盘里创建文件夹：EFI  
 3.打开EFI文件夹，在里面创建文件夹BOOT  
-4.复制[cfgunlock.zip(点击下载)](https://github.com/ske1996/matebook-13-2019-oc-efi/raw/master/cfgunlock.zip)里面的bootx64.efi进U盘的EFI/BOOT下  
+4.复制[cfgunlock.zip(点击下载)](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/raw/master/cfgunlock.zip)里面的bootx64.efi进U盘的EFI/BOOT下  
 5.关机后开机按F12使用这个U盘去引导，然后进入修改bios底层阶段  
 
 - 以下为修改bios底层阶段：  
 1. 进入后 ‘alt’ + ’=‘ 切换进 ACPI Variable  
 2. 用pageup/pagedown/上下方向键找到 SaSetup  
 3. 进入SaSetup后，然后用crtl加pagedown翻到下一页找到左侧横坐标0100，如下图所示，注意左侧横坐标第一项就是0100  
-![image](https://github.com/ske1996/matebook-13-2019-oc-efi/raw/master/%E6%9D%82%E9%A1%B9/dvmt64.bmp)  
+![image](https://github.com/vxzyfx/matebook14-OpenCore-Hackintosh/raw/master/%E6%9D%82%E9%A1%B9/dvmt64.bmp)  
 4. 横坐标0100纵坐标07改成02，横坐标0100纵坐标08改成03（就是我圈出来的位置修改的跟上图一样就行了）  
 5. Crtl加w保存就行了  
 
